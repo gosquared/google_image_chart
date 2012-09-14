@@ -4,7 +4,7 @@ require 'base64'
 
 require 'hashie/dash'
 
-class GoogleChart < Hashie::Dash
+class GoogleImageChart < Hashie::Dash
   property :type, default: "lc"; alias :cht :type
   property :width, default: 600
   property :height, default: 200

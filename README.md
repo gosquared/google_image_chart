@@ -1,14 +1,15 @@
-# GoogleChart
+# GoogleImageChart
 
-Simple wrapper to Google Chart. As the service will be switched off in
-2015, this has been mostly put together for legacy reasons. It's easier
-to drop a gem from a service rather than delete code (and specs)
+Simple wrapper to Google Image Chart. As the service will be switched
+off in on or before 20 April 2015, this has been mostly put together for
+legacy reasons. It's easier to drop a gem from a service rather than
+delete code (and specs)
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'google_chart'
+    gem 'google_image_chart'
 
 And then execute:
 
@@ -16,13 +17,13 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install google_chart
+    $ gem install google_image_chart
 
 ## Usage
 
 Check the examples directory. To run a specific example:
 
-    $ ruby examples/google_chart.rb
+    $ ruby examples/google_image_chart.rb
 
 NB: you will need to have all gems in the `development` group installed.
 

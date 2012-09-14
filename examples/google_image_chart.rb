@@ -1,9 +1,9 @@
 #!/usr/bin/env ruby
 
 require_relative 'example'
-require_relative '../lib/google_chart'
+require_relative '../lib/google_image_chart'
 
-line_chart = GoogleChart.new(
+line_chart_png = GoogleImageChart.new(
   type: "lc:nda",
   axes: %w[x y],
   axes_range: %w[1 0 100 10],
@@ -25,8 +25,8 @@ line_chart = GoogleChart.new(
   ]
 )
 
-exemplify("Google Chart API url", line_chart.url)
+exemplify("Google Image Chart API url", line_chart.url)
 
-puts "\nOpening generated chart...\n"
+puts "\nOpening generated PNG...\n"
 
-`open "#{line_chart.url}"`
+`open "#{line_chart_png.url}"`

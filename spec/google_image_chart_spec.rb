@@ -1,9 +1,9 @@
 require 'spec_helper'
-require 'google_chart'
+require 'google_image_chart'
 
-describe GoogleChart do
+describe GoogleImageChart do
   describe "by default" do
-    subject { GoogleChart.new }
+    subject { GoogleImageChart.new }
 
     its(:type) { should eql "lc" }
     its(:cht) { should eql "lc" }
@@ -23,7 +23,7 @@ describe GoogleChart do
 
   describe "line chart" do
     subject do
-      GoogleChart.new(
+      GoogleImageChart.new(
         type: "lc:nda",
         axes: %w[x y],
         axes_range: %w[1 0 100 10],
@@ -67,7 +67,7 @@ describe GoogleChart do
 
   describe "pie chart" do
     subject do
-      GoogleChart.new(
+      GoogleImageChart.new(
         type: "p",
         width: 240,
         height: 157,
