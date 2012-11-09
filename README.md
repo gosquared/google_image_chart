@@ -1,9 +1,9 @@
 # GoogleImageChart
 
 Simple wrapper to Google Image Chart. As the service will be switched
-off in on or before 20 April 2015, this has been mostly put together for
+off on or before 20 April 2015, this has been mostly put together for
 legacy reasons. It's easier to drop a gem from a service rather than
-delete code (and specs)
+delete code (and associated specs).
 
 ## Installation
 
